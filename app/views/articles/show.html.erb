@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<div style="margin-bottom: 30px">
+<h3 style="margin: 30px 0px"> <%= editable @article, :title %> </h3>
+<p>  <%= editable @article, :content, type: "wysihtml5" %> </p>
+
+</div>
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>
