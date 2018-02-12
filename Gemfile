@@ -14,7 +14,7 @@ gem 'rails-i18n',       '4.0.9'
 
 group :development, :test do
   gem 'byebug',      '4.0.4'
-  gem 'spring',      '1.3.3'
+  gem 'spring',      '2.0.2'
   gem 'sqlite3',     '1.3.10'
   gem 'web-console', '2.1.3'
 end
