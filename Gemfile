@@ -4,7 +4,7 @@ gem 'rails',            '4.2.10'
 gem 'puma',             '3.11.0'
 gem 'sass-rails',       '5.0.7'
 gem 'uglifier',         '2.7.1'
-gem 'jquery-rails',     '4.0.3'
+gem 'jquery-rails',     '4.0.4'
 gem 'turbolinks',       '2.5.3'
 gem 'jbuilder',         '2.2.12'
 gem 'coffee-rails',     '4.1.0'
@@ -18,7 +18,7 @@ group :development, :test do
   gem 'byebug',      '4.0.4'
   gem 'spring',      '1.3.3'
   gem 'sqlite3',     '1.3.10'
-  gem 'web-console', '2.1.2'
+  gem 'web-console', '2.1.3'
 end
 
 group :production do
