@@ -10,11 +10,9 @@ gem 'jbuilder',         '2.2.12'
 gem 'coffee-rails',     '4.1.0'
 gem 'bootstrap-sass',   '3.3.4.1'
 gem 'x-editable-rails', '1.5.3' 
-
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'rails-i18n',       '4.0.9'
 
 group :development, :test do
-  gem 'pry',         '0.10.4'
   gem 'byebug',      '4.0.4'
   gem 'spring',      '1.3.3'
   gem 'sqlite3',     '1.3.10'
@@ -25,3 +23,5 @@ group :production do
   gem 'pg',             '0.18.4'
   gem 'rails_12factor', '0.0.3'
 end
+
+gem 'sdoc', '~> 0.4.0', group: :doc

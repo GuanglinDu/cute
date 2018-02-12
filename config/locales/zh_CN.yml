@@ -1,0 +1,11 @@
+zh_CN:
+  layouts:
+    application:
+      home:        "主页"
+      materials:   "原材料"
+      sales:       "销售"
+      inventories: "库存"
+      accounting:  "财务"
+      contacts:    "联系人"
+      settings:    "设置"
+      help:        "帮助"

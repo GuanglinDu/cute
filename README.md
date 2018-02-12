@@ -8,3 +8,8 @@ Tips:
 
     The starting repo.
 
+Tutorial by Michael Hartl:
+
+    2nd Ed: https://rails-4-0.railstutorial.org/book
+    3rd Ed: https://3rd-edition.railstutorial.org/book
+
