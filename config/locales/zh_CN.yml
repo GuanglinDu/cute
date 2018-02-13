@@ -2,6 +2,7 @@ zh_CN:
   layouts:
     application:
       home:        "主页"
+      cute:        "Cute"
       materials:   "原材料"
       sales:       "销售"
       inventories: "库存"
@@ -9,3 +10,5 @@ zh_CN:
       contacts:    "联系人"
       settings:    "设置"
       help:        "帮助"
+      login:       "登录"
+      about:       "关于"

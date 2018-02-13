@@ -9,6 +9,7 @@ class ArticlesControllerTest < ActionController::TestCase
     get :index
     assert_response :success
     assert_not_nil assigns(:articles)
+    assert_select "title", "Articles | Cute"
   end
 
   test "should get new" do
@@ -45,7 +46,6 @@ class ArticlesControllerTest < ActionController::TestCase
     assert_difference('Article.count', -1) do
       delete :destroy, id: @article
     end
-
     assert_redirected_to articles_path
   end
 end
