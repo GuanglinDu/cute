@@ -3,7 +3,7 @@ require 'test_helper'
 class ContactTest < ActiveSupport::TestCase
   def setup
     @contact = Contact.new(name: "Barack Obama",
-                           mobile: 139123456789,
+                           mobile: "139123456789",
                            role: 1,
                            priority: 1,
                            address: "Santa county",
