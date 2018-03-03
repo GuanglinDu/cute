@@ -12,3 +12,11 @@ zh_CN:
       help:        "帮助"
       login:       "登录"
       about:       "关于"
+
+  activerecord:
+    errors:
+      models:
+        contact:
+          attributes:
+            name:
+              taken: "已存在"

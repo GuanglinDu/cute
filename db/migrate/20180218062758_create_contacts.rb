@@ -4,8 +4,8 @@ class CreateContacts < ActiveRecord::Migration
       t.string :name
       t.integer :mobile
       t.string :phone
-      t.integer :role
-      t.integer :priority
+      t.integer :role, default: 1     # client
+      t.integer :priority, default: 2 # ordinary
       t.string :address
       t.string :email
       t.text :note
