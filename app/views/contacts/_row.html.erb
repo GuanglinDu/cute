@@ -1,0 +1,28 @@
+<% contact = row %>
+
+<td><%= editable contact, :name %></td>
+<td><%= editable contact, :mobile %></td>
+<td><%= editable contact, :phone %></td>
+<td><%= editable contact, :role, type: :select, data: { source: roles } %></td>
+<td>
+  <%= editable contact, :priority, type: :select,
+                                   data: { source: priorities }%>
+</td>
+<td><%= editable contact, :address %></td>
+<td><%= editable contact, :email %></td>
+<td><%= editable contact, :note, type: :textarea %></td>
+<td><%= link_to 'Show', contact, class: 'btn btn-primary btn-xs' %></td>
+<td>
+  <%= link_to edit_contact_path(contact),
+              class: 'btn btn-info btn-xs' do %>
+    <i class="glyphicon glyphicon-edit"></i> Edit
+  <% end %> 
+</td>
+<td>
+  <%= link_to contact_path(contact),
+              method: :delete,
+              data: { confirm: 'Are you sure?' },
+              class: 'btn btn-danger btn-xs' do %>
+    <i class="glyphicon glyphicon-remove"></i> Destroy
+  <% end %>     
+</td>

@@ -1,0 +1,40 @@
+michael:
+  name: Michael Hartl
+  mobile: 139123456789
+  phone: 83848586
+  role: 1
+  priority: 2
+  address: Santa county
+  email: michael@example.com
+  note: Good
+
+barack:
+  name: Barack Obama
+  mobile: 139123456788
+  phone: 83848587
+  role: 2
+  priority: 2
+  address: George county
+  email: barackobama@example.com
+  note: Good
+
+george:
+  name: George W. Bush
+  mobile: 139123456787
+  phone: 83848588
+  role: 3
+  priority: 2
+  address: Los Angeles
+  email: george@example.com
+  note: OK
+
+<% 30.times do |n| %>
+contact_<%= n %>:
+  name:  <%= "Contact #{n}" %>
+  mobile: 139123456787
+  phone: 83848588
+  role: 1
+  priority: 1
+  address: Los Angeles
+  email: <%= "contact-#{n}@example.com" %>
+<% end %>

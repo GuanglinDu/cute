@@ -2,7 +2,7 @@ require 'test_helper'
 
 class ContactTest < ActiveSupport::TestCase
   def setup
-    @contact = Contact.new(name: "Barack Obama",
+    @contact = Contact.new(name: "Bill Clinton",
                            mobile: "139123456789",
                            role: 1,
                            priority: 1,
@@ -39,11 +39,11 @@ class ContactTest < ActiveSupport::TestCase
     assert_not @contact.valid?
   end
 
-  test "phone number should not be over 20 chars long" do
+  test "phone number should not be over 30 chars long" do
     @contact.phone = "86-10-22228888"
     assert @contact.valid?
 
-    @contact.phone = "22228888" * 3
+    @contact.phone = "12345678901" * 3
     assert_not @contact.valid?
   end
 

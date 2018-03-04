@@ -3,8 +3,11 @@
     <%= link_to t('layouts.application.cute'), root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to t('layouts.application.home'),  root_path %></li>
-        <li><%= link_to t('layouts.application.help'),  help_path %></li>
+        <li><%= link_to t('layouts.application.home'), root_path %></li>
+        <li>
+          <%= link_to t('layouts.application.contacts'), contacts_path %>
+        </li>
+        <li><%= link_to t('layouts.application.help'), help_path %></li>
         <li><%= link_to t('layouts.application.login'), '#' %></li>
       </ul>
     </nav>

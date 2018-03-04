@@ -1,10 +1,20 @@
 <% provide(:title, @contact.name) %>
+
+<% roles = Contact.roles.keys.to_a %>
+<% priorities = Contact.priorities.keys.to_a %>
+
 <div class="row">
-  <aside class="col-md-4">
-    <section class="contact_info">
-      <h1>
-        <%= @contact.name %>
-      </h1>
-    </section>
-  </aside>
+  <table class="table table-striped">
+    <thead><tr><%= render 'table_headers' %></tr></thead>
+    <tbody>
+      <tr>
+        <%= render partial: 'row',
+                   object: @contact,
+                   locals: { roles: roles, priorities: priorities } %>
+      </tr>
+    </tbody>
+  </table>
 </div>
+
+<br>
+<%= link_to 'Back to Contacts', contacts_path %>

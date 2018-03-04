@@ -24,13 +24,13 @@ ActiveRecord::Schema.define(version: 20180221140831) do
     t.string   "name"
     t.string   "mobile"
     t.string   "phone"
-    t.integer  "role"
-    t.integer  "priority"
+    t.integer  "role",       default: 1
+    t.integer  "priority",   default: 2
     t.string   "address"
     t.string   "email"
     t.text     "note"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
   add_index "contacts", ["name"], name: "index_contacts_on_name", unique: true

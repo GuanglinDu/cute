@@ -20,3 +20,8 @@ zh_CN:
           attributes:
             name:
               taken: "已存在"
+
+  will_paginate:
+    previous_label: "&#8592; 前页"
+    next_label:     "下页 &#8594;"
+    page_gap:       "…"

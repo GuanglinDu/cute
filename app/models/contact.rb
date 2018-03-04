@@ -14,7 +14,7 @@ class Contact < ActiveRecord::Base
                      length: { maximum: 20 }
   validates :phone, allow_nil: true,
                     allow_blank: true,
-                    length: { maximum: 20 }
+                    length: { maximum: 30 }
   validates :address, allow_nil: true,
                       allow_blank: true,
                       length: { maximum: 255 }
