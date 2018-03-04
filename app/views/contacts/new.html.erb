@@ -1,36 +1,7 @@
 <% provide(:title, "New Contact") %>
+<% provide(:button_text, 'Create contact') %>
+
 <h1>New Contact</h1>
-
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <%= form_for(@contact) do |f| %>
-      <%= render 'shared/error_messages' %>
-
-      <%= f.label :name %>
-      <%= f.text_field :name, class: 'form-control' %>
-
-      <%= f.label :mobile %>
-      <%= f.text_field :mobile, class: 'form-control' %>
-
-      <%= f.label :phone %>
-      <%= f.text_field :phone, class: 'form-control' %>
-
-      <%= f.label :role %>
-      <%= f.select :role, Contact.roles.keys.to_a, class: 'form-control' %>
-
-      <%= f.label :priority %>
-      <%= f.select :priority, Contact.priorities.keys.to_a,
-                              class: 'form-control' %>
-
-      <%= f.label :address %>
-      <%= f.text_field :address, class: 'form-control' %>
-
-      <%= f.label :email %>
-      <%= f.email_field :email, class: 'form-control' %>
-
-      <%= f.submit "Create contact", class: "btn btn-primary" %>
-    <% end %>
-  </div>
-</div>
+<%= render 'form' %>
 
 <%= link_to 'Back to Contacts', contacts_path %>
