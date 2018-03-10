@@ -41,4 +41,7 @@ Rails.application.configure do
 
   # Disables "Cannot render console from 192.168.1.4! Allowed networks: ..."
   config.web_console.whiny_requests = false
+
+  # Gem devise needs this.
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 end
