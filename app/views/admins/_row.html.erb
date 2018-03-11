@@ -1,0 +1,14 @@
+<% admin = row %>
+
+<td><%= editable admin, :name %></td>
+<td><%= editable admin, :role, type: :select, data: { source: roles } %></td>
+<td><%= editable admin, :email %></td>
+<td><%= link_to 'Show', admin, class: 'btn btn-primary btn-xs' %></td>
+<td>
+  <%= link_to admin_path(admin),
+              method: :delete,
+              data: { confirm: 'You sure?' },
+              class: 'btn btn-danger btn-xs' do %>
+    <i class="glyphicon glyphicon-remove"></i> Destroy
+  <% end %>     
+</td>

@@ -29,5 +29,5 @@ zh_CN:
   devise:
     registrations:
       admin:
-        signed_up: "注册成功"
+        signed_up: "注册成功!"
 

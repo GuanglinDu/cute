@@ -52,4 +52,4 @@ en:
   devise:
     registrations:
       admin:
-        signed_up: "Signed up"
+        signed_up: "Signed up successfully."
