@@ -8,7 +8,12 @@
           <%= link_to t('layouts.application.contacts'), contacts_path %>
         </li>
         <li><%= link_to t('layouts.application.help'), help_path %></li>
-        <li><%= link_to t('layouts.application.login'), '#' %></li>
+        <li><%= link_to t('layouts.application.login'),
+                        new_admin_session_path %></li>
+        <li><%= link_to t('layouts.application.logout'),
+                        destroy_admin_session_path,
+                        method: :delete,
+                        data: { confirm: 'You sure?' } %></li>
       </ul>
     </nav>
   </div>

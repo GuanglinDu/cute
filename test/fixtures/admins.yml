@@ -1,0 +1,9 @@
+david:
+  name: David Hansson
+  email: davidh@example.com
+  role: 1
+
+trump:
+  name: Donald Trump
+  email: donaljtrump@example.com
+  role: 2

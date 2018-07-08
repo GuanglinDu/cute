@@ -10,7 +10,9 @@
 <td><%= admin.last_sign_in_ip %></td>
 <td><%= admin.created_at %></td>
 <td><%= admin.updated_at %></td>
-<td><%= link_to 'Show', admin, class: 'btn btn-primary btn-xs' %></td>
+<!--
+<td><%#= link_to 'Show', admin, class: 'btn btn-primary btn-xs' %></td>
+-->
 <td>
   <%= link_to admin_path(admin),
               method: :delete,

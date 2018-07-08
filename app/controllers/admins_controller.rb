@@ -1,12 +1,12 @@
 class AdminsController < ApplicationController
-  before_action :set_admin, only: [:show, :update, :destroy]
+  before_action :set_admin, only: [:update, :destroy]
 
   def index
     @admins = Admin.all
   end
 
-  def show
-  end
+  # def show
+  # end
 
   # PATCH/PUT /admins/1
   # PATCH/PUT /admins/1.json

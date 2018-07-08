@@ -11,6 +11,7 @@ zh_CN:
       settings:    "设置"
       help:        "帮助"
       login:       "登录"
+      logout:      "退出"      
       about:       "关于"
 
   activerecord:
@@ -20,6 +21,12 @@ zh_CN:
           attributes:
             name:
               taken: "已存在"
+        admin:
+          attributes:
+            email:
+              blank: "空"
+            password:
+              blank: "空"
 
   will_paginate:
     previous_label: "&#8592; 前页"
@@ -30,4 +37,9 @@ zh_CN:
     registrations:
       admin:
         signed_up: "注册成功!"
-
+    failure:
+      already_authenticated: "已验证"
+    sesssions:
+      admin:
+        signed_in:  "已登陆"
+        signed_out: "已退出"        

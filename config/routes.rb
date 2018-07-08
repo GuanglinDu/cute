@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
-  root            'static_pages#home'
-  get 'help'   => 'static_pages#help'
-  get 'about'  => 'static_pages#about'
+  root           'static_pages#home'
+  get 'help'  => 'static_pages#help'
+  get 'about' => 'static_pages#about'
   resources :admins, only: [:index, :update, :destroy]
   resources :articles
   resources :contacts
 
-  devise_for :admins  
+  # See https://goo.gl/xamqba, to avoid the route conflicts.
+  devise_for :admins, path: 'devise'
 end

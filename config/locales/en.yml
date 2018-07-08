@@ -41,7 +41,8 @@ en:
       contacts:    "Contacts"
       settings:    "Settings"
       help:        "Help"
-      login:       "Log in"
+      login:       "log in"
+      logout:      "log out"      
       about:       "About"
 
   will_paginate:
