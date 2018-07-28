@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  order_title: MyString
+  datetime: 2018-07-14 17:40:59
+  note: MyString
+  contact_id: 
+
+two:
+  order_title: MyString
+  datetime: 2018-07-14 17:40:59
+  note: MyString
+  contact_id: 
