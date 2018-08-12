@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   # See https://goo.gl/xamqba, to avoid the route conflicts.
   devise_for :admins, path: 'devise'
 
-  get 'material_orders/index'
+  get 'material_orders'    => 'material_orders#index'
   get 'new_material_order' => 'material_orders#new'
 end

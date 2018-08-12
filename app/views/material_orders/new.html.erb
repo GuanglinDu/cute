@@ -1,2 +1,21 @@
-<h1>MaterialOrders#new</h1>
-<p>Find me in app/views/material_orders/new.html.erb</p>
+<% provide(:title, 'New Material Order') %>
+<h1>New Material Order</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@material_order) do |f| %>
+      <%= f.label :order_title %>
+      <%= f.text_field :order_title %>
+
+      <%= f.label :provider %>
+      <%= f.collection_select :contact_id, find_all_suppliers,
+                              :id, :name,
+                              prompt: true %>
+
+      <%= f.label :note %>
+      <%= f.text_area :note %>
+
+      <%= f.submit "Create New Material Order", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

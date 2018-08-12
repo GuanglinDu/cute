@@ -39,7 +39,7 @@ zh_CN:
         signed_up: "注册成功!"
     failure:
       already_authenticated: "已验证"
-    sesssions:
+    sessions:
       admin:
         signed_in:  "已登陆"
-        signed_out: "已退出"        
+        signed_out: "已退出"

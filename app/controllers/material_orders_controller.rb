@@ -3,5 +3,6 @@ class MaterialOrdersController < ApplicationController
   end
 
   def new
+  	@material_order = MaterialOrder.new
   end
 end
