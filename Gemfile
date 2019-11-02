@@ -14,7 +14,7 @@ gem 'x-editable-rails',        '1.5.3'
 gem 'rails-i18n',              '4.0.9'
 gem 'will_paginate',           '3.1.5'
 gem 'bootstrap-will_paginate', '1.0.0'
-gem 'devise',                  '4.2.0'
+gem 'devise',                  '4.7.1'
 
 group :development, :test do
   gem 'byebug',        '4.0.4'
