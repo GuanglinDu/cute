@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails',                   '4.2.10'
-gem 'puma',                    '3.11.0'
+gem 'puma',                    '3.12.2'
 gem 'faker',                   '1.4.2'
 gem 'sass-rails',              '5.0.7'
 gem 'uglifier',                '2.7.1'
